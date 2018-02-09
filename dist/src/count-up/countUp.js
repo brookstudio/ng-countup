@@ -43,10 +43,15 @@ var CountUp = /** @class */ (function () {
         }
         this.options = options || {
             useEasing: true,
+            // toggle easing
             useGrouping: true,
+            // 1,000,000 vs 1000000
             separator: ',',
+            // character to use as a separator
             decimal: '.',
+            // character to use as a decimal
             prefix: '',
+            // optional text before the result
             suffix: '' // optional text after the result
         };
         this.options.easingFn = this.easeOutExpo; // optional custom easing function, default is Robert Penner's easeOutExpo
@@ -74,7 +79,10 @@ var CountUp = /** @class */ (function () {
         return this.options.prefix + x1 + x2 + this.options.suffix;
     };
     // Robert Penner's easeOutExpo
-    CountUp.prototype.easeOutExpo = function (t, b, c, d) {
+    // Robert Penner's easeOutExpo
+    CountUp.prototype.easeOutExpo = 
+    // Robert Penner's easeOutExpo
+    function (t, b, c, d) {
         return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
     };
     CountUp.prototype.ensureNumber = function (n) {
@@ -165,7 +173,10 @@ var CountUp = /** @class */ (function () {
         }
     };
     // start your animation
-    CountUp.prototype.start = function (callback) {
+    // start your animation
+    CountUp.prototype.start = 
+    // start your animation
+    function (callback) {
         var _this = this;
         if (!this.initialize()) {
             return;
@@ -174,7 +185,10 @@ var CountUp = /** @class */ (function () {
         this.rAF = requestAnimationFrame(function () { return _this.count; });
     };
     // toggles pause/resume animation
-    CountUp.prototype.pauseResume = function () {
+    // toggles pause/resume animation
+    CountUp.prototype.pauseResume = 
+    // toggles pause/resume animation
+    function () {
         var _this = this;
         if (!this.paused) {
             this.paused = true;
@@ -189,7 +203,10 @@ var CountUp = /** @class */ (function () {
         }
     };
     // reset to startVal so animation can be run again
-    CountUp.prototype.reset = function () {
+    // reset to startVal so animation can be run again
+    CountUp.prototype.reset = 
+    // reset to startVal so animation can be run again
+    function () {
         this.paused = false;
         delete this.startTime;
         this.initialized = false;
@@ -199,7 +216,10 @@ var CountUp = /** @class */ (function () {
         }
     };
     // pass a new endVal and start animation
-    CountUp.prototype.update = function (newEndVal) {
+    // pass a new endVal and start animation
+    CountUp.prototype.update = 
+    // pass a new endVal and start animation
+    function (newEndVal) {
         var _this = this;
         if (!this.initialize()) {
             return;

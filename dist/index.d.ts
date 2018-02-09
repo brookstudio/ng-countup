@@ -1,1 +1,1 @@
-export * from './src/count-up/count-up.module';
+export * from './src/count-up/';
