@@ -20,5 +20,9 @@
   "include": [
     "index.ts",
     "./src/count-up"
+  ],
+  "exclude": [
+    "./src/app",
+    "./node_modules"
   ]
 }
