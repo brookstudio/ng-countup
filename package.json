@@ -11,7 +11,7 @@
 	"main": "./dist/count-up.module.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/brookstudio/countUp.js.git"
+		"url": "git+https://github.com/brookstudio/ng-countup.git"
 	},
 	"scripts": {
 		"ng": "ng",
