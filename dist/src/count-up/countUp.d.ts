@@ -1,0 +1,34 @@
+import { ElementRef } from '@angular/core';
+export declare class CountUp {
+    private target;
+    private startVal;
+    private endVal;
+    private decimals;
+    private durationSecs;
+    private options;
+    lastTime: number;
+    version: string;
+    initialized: boolean;
+    d: any;
+    dec: number;
+    countDown: boolean;
+    frameVal: number;
+    paused: boolean;
+    rAF: number;
+    startTime: any;
+    timestamp: any;
+    remaining: any;
+    callback: Function;
+    duration: number;
+    constructor(target: ElementRef, startVal: number, endVal: number, decimals: number, durationSecs: number, options: any);
+    formatNumber(num: any): any;
+    easeOutExpo(t: any, b: any, c: any, d: any): number;
+    ensureNumber(n: any): boolean;
+    initialize(): boolean;
+    printValue(value: any): void;
+    count(timestamp: any): void;
+    start(callback: any): void;
+    pauseResume(): void;
+    reset(): void;
+    update(newEndVal: any): void;
+}
