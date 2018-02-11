@@ -74,7 +74,7 @@ var CountUpDirective = /** @class */ (function () {
     ];
     /** @nocollapse */
     CountUpDirective.ctorParameters = function () { return [
-        { type: core_1.ElementRef, decorators: [{ type: core_1.Inject, args: [core_1.ElementRef,] },] },
+        { type: core_1.ElementRef, },
     ]; };
     CountUpDirective.propDecorators = {
         "options": [{ type: core_1.Input, args: ['countUp',] },],

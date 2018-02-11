@@ -70,7 +70,8 @@ export class CountUpDirective implements OnInit {
 		}
 	}
 
-	constructor( @Inject(ElementRef) private el: ElementRef) { }
+	constructor(private el: ElementRef) {
+	}
 
 	private createCountUp(sta, end, dec, dur) {
 		sta = sta || 0;
