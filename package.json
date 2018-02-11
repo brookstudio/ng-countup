@@ -8,9 +8,8 @@
 		"email": "brook.studio@outlook.com",
 		"url": "https://github.com/brookstudio"
 	},
-	"main": "./dist/index.js",
-	"module": "./dist/index.js",
-	"typings": "./dist/index.d.ts",
+	"main": ".index.js",
+	"typings": "./index.d.ts",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/brookstudio/ng-countup.git"

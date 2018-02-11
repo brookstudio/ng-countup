@@ -1,3 +1,18 @@
-src/
+# ignore the .ts files
+*.ts
+
+# include the .d.ts files
+!*.d.ts
+.angular-cli.json
+src/app/
+src/assets/
+favicon.ico
+index.html
+/src/styles.scss
+tsconfig.*
+.editorconfig
+karma.conf.js
+protractor.conf.js
+tslint.json
 e2e/
 node_modules/
