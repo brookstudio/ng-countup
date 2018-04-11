@@ -58,6 +58,8 @@ export class CountUpDirective implements OnInit {
 		this._countUp = this.createCountUp(
 			this.startVal, this.endVal, this.decimals, this.duration);
 		this.animate();
+		// this line fix on the directive used in *ngFor which will set endValue before init, and will not update the value after init
+		this._countUp.update(this.endVal);
 	}
 
 	/**
