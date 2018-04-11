@@ -1,7 +1,7 @@
 {
 	"name": "ng-countup",
 	"description": "A Angular2+ component rewrite in Typescript from CountUp.js.",
-	"version": "5.2.3",
+	"version": "5.2.4",
 	"license": "MIT",
 	"author": {
 		"name": "Brook Studio",

@@ -3,7 +3,6 @@
 
 # include the .d.ts files
 !*.d.ts
-!src/count-up/
 .angular-cli.json
 src/app/
 src/assets/
